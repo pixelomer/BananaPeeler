@@ -1,0 +1,8 @@
+*
+!src/
+!src/**/
+!src/**/*.hpp
+!main.cc
+!.gitignore
+!.gitattributes
+!Makefile
