@@ -13,8 +13,7 @@ public:
 
     void read_from(reader &src) override {
         auto riff = src.read<locator>().get_subreader(src);
-        auto data_len = riff.peek<ULONG>(4);
-        riff.read_list(data, data_len + 8);
+        riff.read_list(data, riff.size());
         src.read(unknown);
     }
 };
